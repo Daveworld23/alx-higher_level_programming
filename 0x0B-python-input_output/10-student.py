@@ -8,4 +8,4 @@ class Student:
         if attrs is None:
             return self.__dict__
         else:
-            return {attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)}
+            return {a: getattr(self, a) for a in attrs if hasattr(self, a)}
