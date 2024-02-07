@@ -10,6 +10,6 @@ def append_after(filename="", search_string="", new_string=""):
         for line in r:
             text.append(line)
             if search_string in line:
-                text.append(new_string + '\n')
+                text.append(new_string)
     with open(filename, 'w') as r:
         w.writeline(text)
