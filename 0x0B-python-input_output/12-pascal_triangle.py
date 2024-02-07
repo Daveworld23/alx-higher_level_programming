@@ -15,5 +15,5 @@ def pascal_triangle(n):
             """calculate for middle values."""
             new_row.append(first_row[i-1][j-1] + first_row[i-1][j]
                     new_row.append(1)
-                    first_row.append(element)
+                    first_row.append(new_row)
     return first_row
