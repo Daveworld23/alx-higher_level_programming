@@ -15,7 +15,7 @@ class Student:
             return self.__dict__
         else:
             return {a: getattr(self, a) for a in attrs if hasattr(self, a)}
-    
+
     def reload_from_json(self, json):
         """Replaces all attributes of student."""
         for b, c in json.items():
