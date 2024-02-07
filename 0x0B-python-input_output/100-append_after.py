@@ -4,7 +4,7 @@
 
 def append_after(filename="", search_string="", new_string=""):
     """creates the text file."""
-    text = []
+    text = ""
     with open(filename) as r:
         """open file in read mode."""
         for line in r:
