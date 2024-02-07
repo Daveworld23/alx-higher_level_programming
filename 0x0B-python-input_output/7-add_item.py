@@ -14,7 +14,7 @@ if __name__ == "__main__":
         new = load_from_json_file("add_item.json")
     except FileNotFoundError:
         new = []
-        """if the doesn't exist, load empty file"""
+        """if the file doesn't exist, load empty file"""
     new.extend(sys.argv[1:])
     """extend the list and save the file afterwards"""
     save_to_json_file(new, "add_item.json")
