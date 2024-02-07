@@ -15,4 +15,4 @@ def append_after(filename="", search_string="", new_string=""):
                 """search string and appends new string after current line."""
     with open(filename, 'w') as w:
         """writes the modified line back to the file."""
-        w.writelines(text)
+        w.write(text)
