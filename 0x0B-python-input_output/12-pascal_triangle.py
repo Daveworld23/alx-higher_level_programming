@@ -8,9 +8,12 @@ def pascal_triangle(n):
         return []
     """if it is an empty list."""
 
-    first_row = [[1]] #initialize the triangle with row [1]
-    for i in range(1, n): #interate fro next row
-        new_row = [1] #initialize first elemntbof next row
+    first_row = [[1]]
+    """initialize the triangle with row [1]"""
+    for i in range(1, n):
+        """interate for next row"""
+        new_row = [1]
+        """initialize first element of next row"""
         for j in range(1, i):
             """calculate for middle values."""
             new_row.append(first_row[i-1][j-1] + first_row[i-1][j])
